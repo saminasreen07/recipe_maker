@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Food</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('food.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+
+        .food-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .food-item {
+            width: 300px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .food-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .food-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .food-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .recipe {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #f1c40f;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            background: #444;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        a:hover {
+            background: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Happy Food</h1>
+    </header>
+    <h2>Foods that make you happy!</h2>
+
+    <div class="food-container">
+        <div class="food-item">
+            <img src="chicken greavy.avif" alt="Chicken Gravy">
+            <div class="food-name">Chicken Gravy</div>
+            <div class="recipe">
+                Ingredients: Chicken, onions, tomatoes, spices, garlic, ginger.<br>
+                Cook chicken with spices, onion, and tomato puree for a rich, flavorful gravy.
+            </div>
+        </div>
+        <div class="food-item">
+            <img src="chicken-biriyani.webp" alt="Chicken Biryani">
+            <div class="food-name">Chicken Biryani</div>
+            <div class="recipe">
+                Ingredients: Basmati rice, chicken, yogurt, spices, saffron, onions.<br>
+                Cook chicken with spices, layer with rice, and steam for a delicious biryani.
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html">Back to Home</a>
+</body>
+</html>

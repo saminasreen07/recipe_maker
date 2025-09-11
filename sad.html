@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sad Food</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('food.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            background-color: #636e72;
+            color: white;
+            padding: 15px;
+        }
+
+        .food-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .food-item {
+            width: 300px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .food-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .food-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .food-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .recipe {
+            font-size: 14px;
+            margin-top: 5px;
+            color: #f1c40f;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: white;
+            background: #444;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        a:hover {
+            background: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sad Food</h1>
+    </header>
+    <h2>Comfort foods for a sad mood</h2>
+
+    <div class="food-container">
+        <div class="food-item">
+            <img src="Bacardi-Rum-Punch.jpg" alt="Rum Punch">
+            <div class="food-name">Bacardi Rum Punch</div>
+            <div class="recipe">
+                Ingredients: Bacardi rum, pineapple juice, orange juice, grenadine.<br>
+                Mix ingredients with ice and serve chilled.
+            </div>
+        </div>
+        <div class="food-item">
+            <img src="cool drinks.jpg" alt="Cool Drinks">
+            <div class="food-name">Refreshing Cold Drink</div>
+            <div class="recipe">
+                Ingredients: Soda, lemon, mint, ice, sugar.<br>
+                Mix and serve chilled for a refreshing taste.
+            </div>
+        </div>
+    </div>
+
+    <a href="index.html">Back to Home</a>
+</body>
+</html>
