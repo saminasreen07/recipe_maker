@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pain Food</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: url('pain-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f8f8f8;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      margin-top: 20px;
+      color: #f39c12;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+    }
+
+    .food-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      padding: 20px;
+    }
+
+    .food-item {
+      width: 280px;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.75);
+      padding: 15px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .food-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+    }
+
+    .food-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .food-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .food-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+      color: #e74c3c;
+    }
+
+    .recipe {
+      font-size: 14px;
+      margin-top: 5px;
+      color: #f1c40f;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+      background: #34495e;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    a:hover {
+      background: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pain Food</h1>
+  </header>
+
+  <h2>Healing foods for when you're in pain</h2>
+
+  <div class="food-container">
+    <div class="food-item">
+      <img src="soup.jpg" alt="Warm Soup">
+      <div class="food-name">Warm Healing Soup</div>
+      <div class="recipe">
+        Ingredients: Chicken or vegetable broth, carrots, ginger, garlic.<br>
+        Boil ingredients and serve hot to soothe your body and mind.
+      </div>
+    </div>
+
+    <div class="food-item">
+      <img src="turmeric-milk.jpg" alt="Turmeric Milk">
+      <div class="food-name">Turmeric Milk</div>
+      <div class="recipe">
+        Ingredients: Milk, turmeric, black pepper, honey.<br>
+        Heat milk, add turmeric and pepper, sweeten with honey.
+      </div>
+    </div>
+
+    <div class="food-item">
+      <img src="dark-chocolate.jpg" alt="Dark Chocolate">
+      <div class="food-name">Dark Chocolate</div>
+      <div class="recipe">
+        A small piece of dark chocolate can help release endorphins<br>
+        and reduce emotional pain.
+      </div>
+    </div>
+  </div>
+
+  <a href="index.html">Back to Home</a>
+</body>
+</html>
